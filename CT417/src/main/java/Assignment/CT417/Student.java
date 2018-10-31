@@ -10,6 +10,7 @@ int Age;
 Module ModuleName;
 int ModuleGrade;
 Course CourseName;
+String UserName;
 
 private HashSet<Course> enrolledInCourse;
 private HashSet<Module> enrolledInModules;
@@ -53,12 +54,13 @@ private HashMap<Module, Integer> grades;
 		return LastName;
 
 		}
-		public String GetUserName()
+		public void GetUserName()
 		{
-			String SN=FirstName;
-			int SID= IDnumber;
-			String UN = SN+Integer.toString(SID);
-			return UN; 
+			String UN = FirstName+Integer.toString(IDnumber);
+			System.out.println(UN); 
+		}
+		public void SetUsername(String UN) {
+			this.UserName= UN;
 		}
 
 		public void setLastname(String last) {
