@@ -39,7 +39,7 @@ private HashSet<Student> enrolledStudents;
 		
 	}
 	public void print() {
-		System.out.println("Course=> Name: " + getTitle());
+		System.out.println("Course Name:" + getTitle());
 
 	}
 		

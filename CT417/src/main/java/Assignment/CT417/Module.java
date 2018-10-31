@@ -47,9 +47,9 @@ private HashSet<Student> enrolledStudents;
 	
 		public void print() {
 
-		System.out.println("Module Name: " + getTitle() + ", Module Code: " + getCode());
-
-		}
-
+		
+		System.out.println("Modules: " +getTitle());
+		
 	}
 
+}
