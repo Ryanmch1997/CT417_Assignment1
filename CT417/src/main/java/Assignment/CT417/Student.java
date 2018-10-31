@@ -53,6 +53,13 @@ private HashMap<Module, Integer> grades;
 		return LastName;
 
 		}
+		public String GetUserName()
+		{
+			String SN=FirstName;
+			int SID= IDnumber;
+			String UN = SN+Integer.toString(SID);
+			return UN; 
+		}
 
 		public void setLastname(String last) {
 
@@ -71,26 +78,7 @@ private HashMap<Module, Integer> grades;
 			BCT.enrollStudent(this);
 		}
 	}
+	
 
-	public void insertGrade(Module oop, int i) {
-		if(enrolledInModules.contains(oop)) {
-
-			grades.put(oop, i);
-
-			}
-		
-	}
-	public Integer getMarks(Module oop) {
-
-		if(grades.containsKey(oop)) {
-
-		return grades.get(oop);
-
-		} else {
-
-		return null;
-
-		}
-	}
-}	
-
+}
+	

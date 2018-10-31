@@ -29,7 +29,7 @@ private HashSet<Student> enrolledStudents;
 		}
 	}
 	public void list() {
-		System.out.println("Student enrolled for Course: " + CourseName);
+		System.out.println("Student enrolled for Course: " + getTitle());
 
 		for (Student s : enrolledStudents) {
 
@@ -39,7 +39,7 @@ private HashSet<Student> enrolledStudents;
 		
 	}
 	public void print() {
-		System.out.println("Coursee=> Name: " + CourseName);
+		System.out.println("Course=> Name: " + getTitle());
 
 	}
 		
