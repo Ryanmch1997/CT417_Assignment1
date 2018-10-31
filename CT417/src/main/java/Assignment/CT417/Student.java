@@ -54,10 +54,11 @@ private HashMap<Module, Integer> grades;
 		return LastName;
 
 		}
-		public void GetUserName()
+		public String GetUserName()
 		{
 			String UN = FirstName+Integer.toString(IDnumber);
-			System.out.println(UN); 
+			System.out.println(UN);
+			return UN; 
 		}
 		public void SetUsername(String UN) {
 			this.UserName= UN;
